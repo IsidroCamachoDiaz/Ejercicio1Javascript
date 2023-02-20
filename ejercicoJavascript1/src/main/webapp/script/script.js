@@ -54,3 +54,37 @@ console.log("numero1 es negativo o distinto de cero");
 if(numero1+1<=numero2) {
 console.log("Incrementar en 1 unidad el valor de numero1 no lo hace mayor o igual que numero2");
 }
+
+function factorial(){
+	let numero=Number(prompt("Introduzca un numero"));
+	let resultado=1;
+	
+	for(let e=2;e<=numero;e++){
+		resultado *= e;
+	}
+	document.write(resultado);
+}
+
+function par(){
+	let numero=Number(prompt("Introduzca un numero"));
+
+	if(numero%2==0)
+	alert("El numero es par "+numero);
+	else
+		alert("El numero no es par "+numero);
+		document.write
+}
+
+function mayusculas(){
+	let texto=prompt("Introduzca algo");
+	
+	//las funciones tolowecase y touppercase convierten el texto completo en mayuscula y minuscula los compramos entero para ver si
+	//esta compuesto por solo mayusculas o minusculas si no sera una mezcla de ambas
+	if(texto==texto.toUpperCase())
+		alert("El texto solo contiene mayusculas")
+	if(texto==texto.toLowerCase())
+		alert("El texto solo contiene minusculas")
+	else if(texto!=texto.toLowerCase()&& texto!=texto.toUpperCase())
+		alert("El texto contiene mayusculas y minusculas")
+
+}
